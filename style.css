@@ -1,0 +1,92 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --light-blue: hsl(229, 89%, 96%);
+}
+
+body{
+    width: 1440px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display';
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    margin: 30px auto 30px auto;
+    box-shadow: 0px 0px 10px var(--desaturated-blue);
+}
+.header{
+    height: 30%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+}
+.content{
+    height: auto;
+    padding: 10%;
+}
+.summary{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.summary > h3{
+    font-size: 24px;
+    font-weight: 900;
+}
+.summary > p{
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+.order{
+    display: flex;
+    background-color: var(--light-blue);
+    border-radius: 4px;
+    height: 75px;
+}
+.order > img{
+    margin: 5px 10px 5px 5px;
+}
+.ordersum {
+    line-height: 30%;
+    margin-left: 10px;
+}
+.ordersum > .order-value{
+    font-size: 16px;
+    color: var(--desaturated-blue);
+}
+.order > .change{
+    margin-left: auto;
+    padding-top: 23px;
+    margin-right: 20px;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+.process{
+    margin-top: 20px;
+}
+.process > .payment{
+    background-color: var(--bright-blue);
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: var(--pale-blue);
+    font-weight: 700;
+}
+.process > .cancel{
+    width: 100%;
+    border: none;
+    padding-top: 20px;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    background-color: var(--very-pale-blue);
+}
